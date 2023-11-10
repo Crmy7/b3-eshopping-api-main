@@ -1,5 +1,5 @@
 const sequelize = require('./_database');
-const { DataTypes } = require('sequelize');
+const { DataTypes, Sequelize } = require('sequelize');
 
 const Product = sequelize.define('Product', {
     title: {
@@ -8,10 +8,6 @@ const Product = sequelize.define('Product', {
     },
     price: {
         type: DataTypes.FLOAT,
-        allowNull: false,
-    },
-    initialStock: {
-        type: DataTypes.INTEGER,
         allowNull: false,
     },
     stock: {

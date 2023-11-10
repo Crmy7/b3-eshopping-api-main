@@ -14,8 +14,7 @@ require('./models/index.js');
 const indexRouter = require('./routes/index.js');
 const productRouter = require('./routes/product.js');
 const adminRouter = require('./routes/admin.js');
-const userRouter = require('./routes/user.js');
-const orderRouter = require('./routes/order.js')
+const userRouter = require('./routes/user.js')
 
 const app = express();
 
@@ -28,7 +27,6 @@ app.use('/', indexRouter);
 app.use('/product', productRouter);
 app.use('/admin', adminRouter);
 app.use('/user', userRouter);
-app.use('/order', orderRouter);
 
 
 module.exports = app;
